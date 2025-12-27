@@ -1,6 +1,6 @@
 import java.util.*;
-class Main{
-    int largestElement(int[] nums)
+class largestElement{
+    int fun(int[] nums)
     {
         int lar=nums[0];
         for(int i=1;i<nums.length;i++)
@@ -11,7 +11,7 @@ class Main{
     }
     public static void main(String[] args)
     {
-        Main obj=new Main();
+        largestElement obj=new largestElement();
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int[] nums=new int[n];
@@ -19,7 +19,7 @@ class Main{
         {
             nums[i]=sc.nextInt();
         }
-        int result=obj.largestElement(nums);
+        int result=obj.fun(nums);
         System.out.println(result);
 
     }
